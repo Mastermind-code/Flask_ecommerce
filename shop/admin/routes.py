@@ -14,3 +14,4 @@ def register():
         flash('Thanks for registering')
         return redirect(url_for('login'))
     return render_template('admin/register.html', form=form, title="Registration page")
+@app.routes
